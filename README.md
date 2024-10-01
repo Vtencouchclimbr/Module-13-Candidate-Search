@@ -1,33 +1,46 @@
-# React + TypeScript + Vite
+![License](https://img.shields.io/badge/license-mit-blue.svg)
+  
+## Description
+This project is a candidate search application that uses TypeScript and the GitHub API to search for and display candidates. Users can save or skip candidates during the search process. Saved candidates are stored locally for future reference. The project demonstrates integration with a third-party API (GitHub) and provides a simple interface for managing candidate data.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Deployed Site
+[On Render](https://module-13-candidate-search-1.onrender.com)
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Description](#description)
+- [Deployed Site](#deployed site)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Video](#video)
+- [Tests](#tests)
+- [Questions](#questions)
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone the repository: `git clone <your-repo-url>` and navigate to the project directory: `cd <your-repo-directory>`
+2. Install dependencies: `npm install`
+3. Build the project: `npm run build`
+4. Start the application: `npm run dev`
 
-## Expanding the ESLint configuration
+## Usage
+1. After starting the application, navigate to `http://localhost:5173` in your browser.
+2. The application will display candidates from the GitHub API.
+3. You can save candidates to local storage or skip them to see the next candidate.
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Contributing
+At this time, contributions are not being accepted for this project.
 
-* Configure the top-level `parserOptions` property as follows:
+## License
+This project is licensed under the MIT license.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Video
+There is no walkthrough video available for this project at the moment.
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+## Tests
+There are currently no tests written for this application.
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Questions
+If you have any questions, please reach out to me:
+- Github: [vtencouchclimbr](https://github.com/vtencouchclimbr)
+- Email: lmntrylmnt@gmail.com
