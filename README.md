@@ -3,14 +3,15 @@
 ## Description
 This project is a candidate search application that uses TypeScript and the GitHub API to search for and display candidates. Users can save or skip candidates during the search process. Saved candidates are stored locally for future reference. The project demonstrates integration with a third-party API (GitHub) and provides a simple interface for managing candidate data.
 
-## Deployed Site
+## Deployed
 [On Render](https://module-13-candidate-search-1.onrender.com)
 
 ## Table of Contents
 - [Description](#description)
-- [Deployed Site](#deployed site)
+- [Deployed Site](#deployed)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Featured Code](#featured)
 - [Contributing](#contributing)
 - [License](#license)
 - [Video](#video)
@@ -27,6 +28,19 @@ This project is a candidate search application that uses TypeScript and the GitH
 1. After starting the application, navigate to `http://localhost:5173` in your browser.
 2. The application will display candidates from the GitHub API.
 3. You can save candidates to local storage or skip them to see the next candidate.
+
+## Featured
+``` Typescript to get the user details
+const skipCandidate = () => {
+    // Fetch a new candidate from the GitHub API
+    searchGithub().then((candidates) => {
+      const candidate = candidates[0];
+      searchGithubUser(candidate.login).then((user) => {
+        setCandidate(user);
+      });
+    });
+  };
+```
 
 ## Contributing
 At this time, contributions are not being accepted for this project.
